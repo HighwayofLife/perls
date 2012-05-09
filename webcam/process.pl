@@ -7,11 +7,11 @@ use IPC::Open2;
 # limit the number of frames we keep stored for time lapses
 my $limit = 4000;
 
-# Set this to where the images are saved every 1 second
-my $temp_timelapse_dir = '/home/example/webcam/images/'; # <-------- fill that in
+# Set this to where the images are saved every 1 second by mplayer
+my $temp_timelapse_dir = '/perls/webcam/images/'; # <-------- fill that in
 
 # set this to where you want the saved after we remove images 1-14
-my $timelapse_dir = '/home/example/webcam/saved/';
+my $timelapse_dir = 'perls/webcam/saved/';
 
 process_images($timelapse_dir, $temp_timelapse_dir);
 
